@@ -1,0 +1,52 @@
+.listCard {
+  position: relative;
+}
+.pImg {
+  border-radius: 1rem;
+  overflow: hidden;
+  padding-top: 100%;
+  position: relative;
+}
+.pImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  transition: 0.3s;
+}
+.pInfo {
+  padding: 1rem 0;
+}
+.discount {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: goldenrod;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: 0.3s;
+}
+.pInfo > p {
+  padding: 0.5rem 0;
+}
+.pInfo > p:first-of-type {
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pInfo > p:last-of-type {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.listCard:hover img {
+  transform: scale(1.1);
+}
+.listCard:hover .discount {
+  opacity: 1;
+}

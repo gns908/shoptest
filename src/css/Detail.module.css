@@ -1,0 +1,34 @@
+.detail {
+}
+.productCon {
+  display: flex;
+  gap: 2rem;
+}
+.imgCon {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.imgCon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pInfo {
+  flex: 1;
+  border: 5px solid lightblue;
+}
+.pInfo > p {
+  padding: 1rem 0;
+}
+.count {
+  padding: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+}
+.pDesc {
+  padding: 2rem 0;
+}
+.similar {
+  padding: 2rem 0;
+}

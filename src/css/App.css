@@ -1,0 +1,112 @@
+.App {
+  overflow: hidden;
+}
+
+.mw {
+  max-width: 1200px;
+  width: calc(100% - 2rem);
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .mw {
+    padding-top: 100px;
+  }
+}
+
+.foot {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid lightgray;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+/* main new 카테고리 리스트*/
+.mainlist {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.mainlist > * {
+  border: 1px solid red;
+}
+
+.mainlist .listCon {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.listCon li {
+  border: 1px solid red;
+}
+
+.shopall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.shopall h2 {
+  width: 100%;
+}
+.shopall nav {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.shopall nav button {
+  background-color: goldenrod;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+}
+.shopall .listCon {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.cart th {
+  text-align: center;
+}
+.cart th,
+.cart td {
+  padding: 1rem;
+  border: 1px solid lightgray;
+  vertical-align: middle;
+}
+.cart .center {
+  text-align: center;
+}
+.cart .right {
+  text-align: right;
+}
+
+.cart .img {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cart img {
+  width: 100px;
+}
+.cart tbody td:nth-of-type(2) {
+  cursor: pointer;
+}
+.cart tbody td:last-of-type {
+  cursor: pointer;
+}
+.cart tbody td:last-of-type:hover i {
+  color: tomato;
+}
